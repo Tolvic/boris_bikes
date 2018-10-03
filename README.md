@@ -1,6 +1,6 @@
 ## Boris Bikes
 A project to build a program that will emulate all the docking stations, bikes, and infrastructure (repair staff, and so on).
-
+#
 ## Motivation
 This project exists as part of a pair programming exercise to cover the following focus goals:
 * I write code that is easy to change
@@ -35,7 +35,11 @@ Describe and show how to run the tests with code examples.
 ## How to use?
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
-## Contribute
+## Contributors
+
+Dave Best
+Terry Mace
+Neil Brockman
 
 Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
 
