@@ -5,7 +5,6 @@ class DockingStation
   def initialize
     @capacity = 20
     @bikes = Array.new
-
   end
 
   def release_bike
@@ -17,19 +16,10 @@ class DockingStation
     raise('Unable to dock. At capacity') unless @bikes.length < 20
     @capacity -= 1
     @bikes.push(bike)
-    #raise "No bikes" if @bike.nil?
-    fail "No bikes" if @bike.nil?
-    @bike
+    raise "No bikes" if @bikes.nil?
+    #fail "No bikes" if @bike.nil?
+    @bikes
   end
-
-  def dock(bike)
-
-    raise "Station full" unless @bike.nil?
-    #unless @bike.nil? raise "Station full"
-    @bike = bike
-    #@bikes << bike
-  end
-
 end
 
 
@@ -37,5 +27,4 @@ class Bike
   def working?
     true
   end
-
 end
