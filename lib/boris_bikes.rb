@@ -16,9 +16,6 @@ class DockingStation
     raise('Unable to dock. At capacity') unless @bikes.length < 20
     @capacity -= 1
     @bikes.push(bike)
-    raise "No bikes" if @bikes.nil?
-    #fail "No bikes" if @bike.nil?
-    @bikes
   end
 end
 
