@@ -29,7 +29,7 @@ describe DockingStation do
     end
 
     it "When attempting to release bike when no bikes in docking station return error" do
-      expect(subject.release_bike).to eq ("No bikes")
+      expect{subject.release_bike}.to raise_error "No bikes"
     end
 
 
