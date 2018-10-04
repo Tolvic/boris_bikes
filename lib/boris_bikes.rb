@@ -7,8 +7,8 @@ class DockingStation
   end
 
   def dock(bike)
+    raise('Unable to dock. At capacity') unless @bike.nil?
     @bike = bike
-
   end
 
 end

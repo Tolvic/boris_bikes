@@ -30,10 +30,13 @@ describe DockingStation do
 
     it "When attempting to release bike when no bikes in docking station return error" do
       expect{subject.release_bike}.to raise_error("No bikes")
-
-      #expect(subject.release_bike).to eq ("No bikes")
     end
 
+    it 'checks that bikes cant be docked when at capacity' do
+      bike = Bike.new
+      subject.dock(bike)
+      expect{subject.dock(bike)}.to raise_error("Unable to dock. At capacity")
+    end
 
 
 end
