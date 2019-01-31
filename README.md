@@ -1,7 +1,7 @@
 # Borris Bikes Challenge
 A challenge set by Makers Academy to teach test driven development. The result was a console app that simulate Borris Bikes dociking stations, bikes and infastructure. 
 
-## TUnit testsesting
+## Unit testsesting
 Unit tests can be run using the following command:
 
 ```
